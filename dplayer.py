@@ -8,7 +8,7 @@
 # -----------------------------------------------------------
 # Configuration
 # You need to change the setting according to your environment
-gregister_url='http://localhost:5001'
+gregister_url='http://192.168.0.5:5001'
 glocalip_adr='127.0.0.1'
 
 # -----------------------------------------------------------
@@ -105,7 +105,6 @@ example:
     python3 dplayer bazinga 40001 x407
         """)
         return 0
-
 
     # register player
     r = put("%s/dpoker/v1/enter_game"%gregister_url, data={'team': team_name, \
